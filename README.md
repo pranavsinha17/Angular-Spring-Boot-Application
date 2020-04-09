@@ -1,4 +1,4 @@
-# BookManagementJEEFSIIIJAL30
+# BookManagementSytem
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
 To install node_modules run `npm install`
@@ -38,6 +38,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   <li>Oracle Database</li>
 </ul>
 
+<b>`Note`: Web Services for this project can be found at (https://github.com/pranavsinha17/Spring-Web-Services-REST-)</b>  
 ## Application Screenshots
 
 ![FirstShot](https://github.com/pranavsinha17/Angular-Spring-Boot-Application/blob/master/Screenshots/Screenshot%20(15).png)
