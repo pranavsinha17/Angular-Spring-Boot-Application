@@ -38,6 +38,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   <li>Oracle Database</li>
 </ul>
 
+## Application Screenshots
+
+![FirstShot](https://github.com/pranavsinha17/Angular-Spring-Boot-Application/blob/master/Screenshots/Screenshot%20(15).png)
+`Adding a book record`
+
+![SecondShot](https://github.com/pranavsinha17/Angular-Spring-Boot-Application/blob/master/Screenshots/Screenshot%20(16).png)
+`Getting all Book Records`
+
+![ThirdShot](https://github.com/pranavsinha17/Angular-Spring-Boot-Application/blob/master/Screenshots/Screenshot%20(17).png)
+`Updating Records` 
 
 
 
