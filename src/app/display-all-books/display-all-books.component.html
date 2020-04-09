@@ -1,0 +1,50 @@
+<div style="margin-top:200px">
+<table class="table table-hover" align="center" border="1">
+    <thead>
+      <tr>
+        <th >Book ID</th>
+        <th >Book Name</th>
+        <th> Book Description</th>
+        <th >Delete Book</th>
+        <th>Edit Book</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of bookList">
+        <td>{{book.id}}</td>
+        <td>{{book.name}}</td>
+        <td>{{book.description}}</td>
+        <td><button  (click)="onclickDeleteDetails(book)" class="btn btn-danger">Delete</button></td>
+        <td><button (click)="redirectToUpdate(book)" class="btn btn-warning">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <div *ngIf="val1">
+  <form  #myForm="ngForm">  
+         <div class="form-group">
+              <label  for="id">Book Id</label>  
+            <input required  [(ngModel)]="id"  name="id" type="text" class="form-control" #idControl="ngModel" readonly />
+         <div class="alert alert-danger" *ngIf="!idControl.valid && idControl.touched">
+        id is required
+      </div>        
+    </div>
+            <div class="form-group">
+              <label  for="name">Book Name</label>       
+      <input required  [(ngModel)]="name"  name="name" type="name" class="form-control" #nameControl="ngModel" >     
+      <div class="alert alert-danger" *ngIf="!nameControl.valid && nameControl.touched">name is required </div>     
+       </div>
+  
+        <div class="form-group">
+              <label for="departmentt">Book Description</label>        
+      <input class="form-control" required  [(ngModel)]="description"  name="department" type="text" #deptControl="ngModel" />                
+      <div class="alert alert-danger"  *ngIf="!deptControl.valid && deptControl.touched">Author  is Required
+      </div>  
+        </div>   
+    
+  </form>
+   <button (click)=" onclickUpdate()"
+         class="btn btn-success">Update Book
+    </button> 
+    </div>
